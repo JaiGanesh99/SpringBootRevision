@@ -1,0 +1,28 @@
+<html>
+	<head></head>
+	<body>
+		<h3>Hello Hi...</h3>
+		<h1>Car Details</h1>
+		<table border="3" class="center table table-striped">
+			<thead>
+				<tr>
+					<th>City Id</th>
+					<th>City Name</th>
+					<th>City CountryCode</th>
+					<th>City District</th>
+					<th>City Population</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each="city : ${City}">
+				<td th:text="${city.id}"></td>
+				<td th:text="${city.name}"></td>
+				<td th:text="${city.countryCode}"></td>
+				<td th:text="${city.district}"></td>
+				<td th:text="${city.population}"></td>
+				</tr>
+			</tbody>
+		</table>
+		</body>		
+</html>

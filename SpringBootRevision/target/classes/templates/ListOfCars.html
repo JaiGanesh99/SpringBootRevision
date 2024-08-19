@@ -1,0 +1,24 @@
+<html>
+	<head></head>
+	<body>
+		<h3>Hello Hi...</h3>
+		<h1>Car Details</h1>
+		<table border="3" class="center table table-striped">
+			<thead>
+				<tr>
+					<th>Car Name</th>
+					<th>Car Model</th>
+					<th>Car Type</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each="car : ${Cars}">
+				<td th:text="${car.CarName}"></td>
+				<td th:text="${car.CarModel}"></td>
+				<td th:text="${car.CarType}"></td>
+				</tr>
+			</tbody>
+		</table>
+		</body>		
+</html>
